@@ -2,4 +2,14 @@
 
 <button (click)="openDialog()">Open Dialog Content</button>
 
-<router-outlet></router-outlet>
+<div kendoDialogContainer></div>
+
+<!-- <router-outlet></router-outlet> -->
+
+<ng-template #dialogTemplate>
+    <div class="dialog-wrapper">
+        Dialog Template Works
+        <router-outlet></router-outlet>
+    </div>
+  </ng-template>
+  
