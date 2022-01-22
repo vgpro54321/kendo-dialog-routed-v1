@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { KendoDialogWrapperComponent } from './kendo-dialog-wrapper/kendo-dialog-wrapper.component';
 import { RouterModule } from '@angular/router';
 import { DialogContent1Component } from './dialog-content1/dialog-content1.component';
+import { DialogModule } from '@progress/kendo-angular-dialog';
 
 
 
@@ -13,6 +14,7 @@ import { DialogContent1Component } from './dialog-content1/dialog-content1.compo
   ],
   imports: [
     CommonModule,
+    DialogModule,
 
     RouterModule.forChild([
       {

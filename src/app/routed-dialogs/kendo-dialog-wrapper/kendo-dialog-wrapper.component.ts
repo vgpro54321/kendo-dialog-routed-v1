@@ -39,10 +39,14 @@ export class KendoDialogWrapperComponent {
     let dialogRef = this.dialogService.open({
       title: "Please confirm",
       content: this.dialogTemplate,
-      actions: [{ text: "No" }, { text: "Yes", themeColor: "primary" }],
+      actions: [{ text: "No" }, { text: "Yes", themeColor: "primary" }], 
+      actionsLayout: 'stretched'
     });
 
-
+    this.router.navigate(['screen1'], {
+      relativeTo: this.route,
+      //skipLocationChange: true,
+    });
     
   }
 
