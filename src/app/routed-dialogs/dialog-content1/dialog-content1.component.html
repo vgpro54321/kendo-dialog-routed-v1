@@ -1,8 +1,25 @@
-<p>dialog-content1 works!</p>
+<kendo-dialog>
+    <kendo-dialog-titlebar>
+        dialog-content1 works!
+    </kendo-dialog-titlebar>
 
-<button kendoButton (click)="onDialogClose()">Cancel</button>
-<button kendoButton (click)="onDeleteData()" themeColor="primary"> Delete</button>
-<!-- 
+
+    This is content
+
+
+    <kendo-dialog-actions layout="stretched">
+        <button kendoButton class="k-button k-button-md k-rounded k-button-solid k-button-solid-base" (click)="onDialogClose()">Cancel</button>
+        <button kendoButton class="k-button k-button-md k-rounded k-button-solid k-button-solid-primary" (click)="onDeleteData()" themeColor="primary">
+            Delete
+        </button>
+    </kendo-dialog-actions> 
+
+
+    <br>
+    this is some other content.
+    <!-- <button kendoButton (click)="onDialogClose()" themeColor="primary">Cancel</button>
+<button kendoButton [disabled]="true" (click)="onDeleteData()" themeColor="primary"> Delete</button> -->
+    <!-- 
 <kendo-dialog-actions layout="stretched" >
     <button kendoButton (click)="onDialogClose()">Cancel</button>
     <button kendoButton (click)="onDeleteData()" themeColor="primary">
@@ -10,3 +27,4 @@
     </button>
 </kendo-dialog-actions> 
  -->
+</kendo-dialog>
